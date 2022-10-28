@@ -5,16 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Empleado extends Model
+class Login extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'id_empleado_fk',
         'identificacion',
-        'nombre_completo',
-        'gustos',
-        'disgustos',
-        'alergias'
+        'clave',
     ];
-
 }
